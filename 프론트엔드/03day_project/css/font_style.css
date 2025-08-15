@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/* h1 {
+  font-weight: normal;
+}
+
+p span {
+  font-weight: bold;
+} */
+
+/* html {
+  font-size: 16px;
+}
+
+article {
+  font-size: 40px;
+}
+
+article h1 {
+  font-size: 3em;
+}
+
+article p {
+  font-size: 1em;
+}
+
+article q {
+  font-size: 0.8em;
+} */
+
+/* ul li {
+  font-size: 40px;
+}
+
+ul li:nth-of-type(1) {
+  font-family: '굴림';
+}
+
+ul li:nth-of-type(2) {
+  font-family: '굴림';
+}
+
+ul li:nth-of-type(3) {
+  font-family: 'serif';
+}
+
+ul li:nth-of-type(4) {
+  font-family: 'arial';
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); */
+/* 
+p#txt {
+  font-size: 100px;
+  font-family: 'Monoton', cursive;
+} */
+
+/* i.fa-android {
+  font-size: 300px;
+} */
+
+/* li:nth-of-type(1) {
+  color: rgb(255, 0, 0);
+}
+
+li:nth-of-type(2) {
+  color: #ff0000;
+}
+
+li:nth-of-type(3) {
+  color: rgb(255, 0, 0);
+} */
+
+/* .text1 {
+  line-height: 40px;
+  border: 1px solid red;
+}
+
+.text2 {
+  line-height: 1.5;
+  border: 1px solid blue;
+} 문단 사이즈 지정*/
+
+p {
+  border: 1px solid blue;
+}
+
+p:nth-of-type(1) {
+  text-align: left;
+}
+
+p:nth-of-type(2) {
+  text-align: center;
+}
+
+p:nth-of-type(3) {
+  text-align: right;
+}
+
+p:nth-of-type(3) {
+  text-align: justify;
+}

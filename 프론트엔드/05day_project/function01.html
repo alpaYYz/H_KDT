@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>함수</title>
+  </head>
+  <body>
+    <script>
+      //   function addnum() {
+      //     var sum = 10 + 20;
+      //     mlti = 10 * 20;
+      //   }
+      //   addnum();
+      //   console.log.mlti;
+
+      //   function multiple(a, b = 5, c = 20) {
+      //     return a * b * c;
+      //   }
+      //   let result1 = multiple(5, 10, 20);
+      //   document.write('resul1의 결과 ' + result1 + '입니다 <br>');
+
+      //   let result2 = multiple(10, 20);
+      //   document.write('resul2의 결과 ' + result2 + '입니다 <br>');
+
+      //   let result3 = multiple(30);
+      //   document.write('resul3의 결과 ' + result3 + '입니다 <br>');
+      function addnum(n) {
+        let result = 0;
+        for (let i = 1; i <= n; i++) {
+          result += i;
+        }
+        return result;
+      }
+      n = prompt('n의 값을 입력해 : ');
+      let a = addnum(n);
+      document.write('답은  ' + a + '이다.');
+    </script>
+  </body>
+</html>

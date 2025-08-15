@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>swith</title>
+  </head>
+  <body>
+    <script>
+      var session = prompt('관심 세션을 선택 1 - 마케팅 2개발 3 - 디자인');
+
+      switch (session) {
+        case ('1', '4'):
+          document.write('<p>마케팅세션은 <strong>201호<strong/>에서 진행<p/>');
+          break;
+        case '2':
+          document.write('<p>개발 세션은 <strong>201호<strong/>에서 진행<p/>');
+          break;
+        case '3':
+          document.write('<p>디자인 <strong>201호<strong/>에서 진행<p/>');
+          break;
+        default:
+          alert('잘못입력함');
+      }
+    </script>
+  </body>
+</html>

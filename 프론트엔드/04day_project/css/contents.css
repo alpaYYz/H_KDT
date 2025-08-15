@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+section {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  float: left;
+  margin: 100px;
+  perspective: 600px;
+}
+section article {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  opacity: 0.3; /* 배경색의 불명도 지정*/
+}
+section:nth-of-type(1) article {
+  transform: rotateY(120deg);
+  transform-origin: center center;
+}
+
+section:nth-of-type(2) article {
+  transform: rotateY(120deg);
+  transform-origin: right center;
+}
+/* section:nth-of-type(2) article {
+  transform: rotateY(45deg);
+}
+select:nth-of-type(3) article {
+  transform: translateZ(100px);
+}
+select:nth-of-type(4) article {
+  transform: translateZ(-100px);
+} */

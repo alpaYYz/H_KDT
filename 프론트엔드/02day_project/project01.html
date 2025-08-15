@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프런트엔드 개발자 문서</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+                <h1>프론트엔드 개발자 지원서</h1>
+                <p>실무 경험이 있는 분을 찾습니다.</p>
+                <hr>
+                <h4>개인정보</h4><br>
+                    <label>이름</label><br>
+                    <input id = "name" type = "name"><br>
+                    <label>연락처</label><br>
+                    <input id = "tel" type = "tel">
+                <h4>지원 분야</h4>
+                    <label for="weppur">웹 퍼블리싱</label>
+                    <input type="radio" name="chsub" id="weppur" value="weppur" />
+                    <label for="wepmak">웹 어플리케이션 개발</label>
+                    <input type="radio" name="chsub" id="wepmak" value="wepmak" />
+                    <label for="upgrad">개발 환경 개선</label>
+                    <input type="radio" name="chsub" id="upgrad" value="upgrad" />
+                <h4>지원 동기</h4>
+                    <textarea
+                    cols = "60"
+                    rows = "5"
+                    placeholder="본사 지원 동기를 간력히 써주세요"
+                    ></textarea>
+                    <div><input type="reset" value="다시쓰기"/>
+                        <input type="submit" value="접수하기"/> 
+                    </div>
+  </body>
+</html>

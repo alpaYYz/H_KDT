@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fac</title>
+    <style>
+      body {
+        padding-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>while문을 사용해</h1>
+
+    <script>
+      var n = prompt('숫자를 입력하세요', '10');
+      var msg = '';
+
+      if (n != null) {
+        var nfact = 1;
+        var i = 1;
+
+        while (i <= n) {
+          nfact *= i++;
+        }
+        msg = n + '!' + '=' + nfact;
+      } else {
+        msg = '값을 입력할 수 없어';
+      }
+      document.write(msg);
+    </script>
+  </body>
+</html>

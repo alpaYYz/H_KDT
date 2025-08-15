@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* * {
+  border: 1px solid red;
+} */
+
+/* h1 {
+  border: 1px dotted red;
+}
+
+p {
+  border: 1px dotted green;
+}
+
+a {
+  border: 1px dashed blue;
+} */
+/* 
+p strong {
+  border: 1px solid blue;
+} */
+
+/* ul > li > ol {
+  border: 1px solid blue;
+} */
+
+/* h1, h2, h3, h4 {
+  border: 1px solid blue;
+} */
+
+/* ul li:nth-child(odd) {
+  border: 1px solid red;
+} /* 2의 배수만 적용, 연산자도 가능 3n-1등 */
+
+/* ul li:nth-child(even) {
+  border: 1px solid blue;
+}  */
+
+/* input[type='text'] {
+  border: 1px solid blue;
+}
+
+input[type='password'] {
+  border: 1px solid red;
+} */
+
+/* h1 {
+  border: 1px solid blue;
+}
+
+h1:hover {
+  border: 1px solid red;
+} */
+
+/* h1:before {
+  content: 'before content';
+  color: blue;
+}
+
+h1:after {
+  content: 'after content';
+  color: red;
+} */
+
+/* p.text1 {
+  border: 1px solid blue;
+}
+
+.text2 {
+  border: 1px solid red;
+} */
+
+#header {
+  border: 1px solid green;
+}
+
+#section {
+  border: 1px solid red;
+}
+
+#footer {
+  border: 1px solid blue;
+}
