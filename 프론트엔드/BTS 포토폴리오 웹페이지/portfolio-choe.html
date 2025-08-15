@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>프로젝트1-조도센서를 이용한 스마트 조명 & 블라인드</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://code.highcharts.com/dashboards/dashboards.js"></script>
+    <script src="https://code.highcharts.com/dashboards/datagrid.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/dashboards/modules/dashboards-plugin.js"></script>
+    <style>
+        @import url("https://code.highcharts.com/css/highcharts.css");
+        @import url("https://code.highcharts.com/css/datagrid.css");
+        @import url("https://code.highcharts.com/css/dashboards.css");
+
+        #csv {
+            display: none;
+        }
+
+        #csv2 {
+            display: none;
+        }
+
+        #title h1 {
+            text-align: center;
+        }
+
+        li {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 60px 220px 230px 60px 220px 230px;
+
+        }
+
+        .box>* {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a
+                        href="mailto:contact@example.com">haejin2269@naver.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+82 010 2269 0747</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <h1><a href="index.html">팀원 포트폴리오</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a class="active" href="portfolio.html">프로젝트</a></li>
+                    <li><a href="team.html">팀 소개</a></li>
+                    <li><a href="contact.html">연락처</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="portfolio.html">프로젝트</a></li>
+                    <li>프로젝트1</li>
+                </ol>
+                <h2>프로젝트1-조도센서를 이용한 스마트 조명 & 블라인드</h2>
+            </div>
+        </section>
+        <!-- End Breadcrumbs -->
+
+        <!-- ======= 제안 ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-12">
+                        <img src="forms_img/a.png" width="700" height="600" alt="" />
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="portfolio-description">
+                            <h2>제안</h2>
+                            <p>
+                                - 조도센서를 이용해 실외 환경에 따른 적합한 내부 환경 구성 <br>
+                                - 자동화를 통해 사용자의 편의성 증대
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ======= 기존 제품과의 차이점 ======= -->
+            <div class="container">
+                <div class="row gy-4">
+                    <div id="container"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-12">
+                        <img src="forms_img/b.png" width="1000" height="900" alt="" />
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="portfolio-description">
+                            <h2>기존 제품과의 차이점</h2>
+                            <p>
+                                01. 자동화에 초점화를 맞춤 <br>
+                                02. 사용자 편의성, 자율성을 위한 스위치 부착
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======= 부품소개 ======= -->
+            <div class="container">
+                <div class="row gy-4">
+                    <div id="container"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-12">
+                        <img src="forms_img/c.png" width="1000" height="700" alt="" />
+                    </div>
+
+                    <div class="portfolio-description"></div>
+                    <h2>부품소개</h2>
+                    <div class="box">
+
+                        <header class="item1">
+                            <h3>01. 조도센서 </h3>
+                        </header>
+                        <header class="item2">
+                            <h3>02. 가변저항 </h3>
+                        </header>
+                        <header class="item3"> </header>
+
+
+                        <section class="item4"><img src="forms_img/d.png" style="height: 100px;"></section>
+                        <section class="item5"><img src="forms_img/e.png" style="height: 100px;"></section>
+                        <section class="item6"> </section>
+
+
+                        <footer class="item color2">
+                            주변의 밝기를 측정하는 센서이다.
+                            광에너지를 받으면 내부에 움직이는 전자가 발생하여 전도율이 변하는 광전효과를 가지는 소자를 사용한다.
+                        </footer>
+                        <footer class="item color3">가변저항은 전자회로에서 저항값을 임의로 바꿀 수 있는 저항기이다.</footer>
+                        <div class="item color4"> </div>
+
+                        <header class="item1">
+                            <h3>03. RTC모듈 </h3>
+                        </header>
+                        <header class="item2">
+                            <h3>04. 스텝모터 </h3>
+                        </header>
+                        <header class="item3">
+                            <h3>05. 모터드라이버 </h3>
+                        </header>
+
+
+                        <section class="item4"><img src="forms_img/a_1.png" style="height: 100px;"></section>
+                        <section class="item5"><img src="forms_img/b_1.png" style="height: 100px;"></section>
+                        <section class="item6"><img src="forms_img/c_1.png" style="height: 100px;"> </section>
+
+
+                        <footer class="item color2">
+                            RTC(Real Time Clock)란 이름 그대로 실시간 시계를 뜻한다.
+                            아두이노가 전원이 꺼졌을 떄도 내부에 있는 코인 배터리를 통해서,
+                            시간을 계산하여 실시간으로 시간을 저장 할 수 있는 모듈이다.
+                        </footer>
+                        <footer class="item color3">
+                            높은 정밀도가 필요한 위치 결정 운전이 가능하게 설계된 모터이다
+                            각도, 속도, 회전방향 제어가 가능하다.
+                            각도 제어를 통해 바퀴수를 제어할 수 있다.
+                        </footer>
+                        <footer class="item color4">
+                            스텝모터 코딩 제어를 통해 바퀴수, 회전속도, 회전방향을 제어 가능하게 해준다.
+                        </footer>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ======= 최종구현1 ======= -->
+            <div class="container">
+                <div class="row gy-4">
+                    <div id="container"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-12">
+                        <img src="forms_img/b_11.png" width="1500" height="600" alt="" />
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="portfolio-description">
+                            <h2>최종구현</h2>
+                            <p>
+                                01. 조명을 자동모드로 설정 후 실외 빛이 평시상태에
+                                도달 시 강한 실내 조명을 제공한다. <br>
+                                02. 조명을 자동모드로 설정 후 실외 빛이 너무 강하면
+                                약한 실내 조명을 제공한다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr />
+
+        <!-- End Portfolio Details Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>B.T.S(방범퇴치소년단)</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/ -->
+                Designed by
+                <a href="https://bootstrapmade.com/">B.T.S(방범퇴치소년단)</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
